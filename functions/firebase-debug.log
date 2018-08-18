@@ -1,0 +1,18 @@
+[debug] [2018-08-17T20:48:15.646Z] ----------------------------------------------------------------------
+[debug] [2018-08-17T20:48:15.648Z] Command:       /home/icaro/.nvm/versions/node/v9.4.0/bin/node /home/icaro/.nvm/versions/node/v9.4.0/bin/firebase deploy --only functions
+[debug] [2018-08-17T20:48:15.648Z] CLI Version:   4.0.0
+[debug] [2018-08-17T20:48:15.648Z] Platform:      linux
+[debug] [2018-08-17T20:48:15.648Z] Node Version:  v9.4.0
+[debug] [2018-08-17T20:48:15.648Z] Time:          Fri Aug 17 2018 17:48:15 GMT-0300 (-03)
+[debug] [2018-08-17T20:48:15.648Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-17T20:48:15.655Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-17T20:48:15.655Z] > authorizing via signed-in user
+[debug] [2018-08-17T20:48:15.658Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/you-need-an-automatic-budget  
+  
+ Fri Aug 17 2018 17:48:15 GMT-0300 (-03)
+[debug] [2018-08-17T20:48:16.971Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-17T20:48:16.971Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/you-need-an-automatic-budget/tokens  
+  
+ Fri Aug 17 2018 17:48:16 GMT-0300 (-03)
+[debug] [2018-08-17T20:48:18.198Z] <<< HTTP RESPONSE 200

@@ -1,0 +1,23 @@
+{
+  "name": "YNAAB",
+  "version": "1.0.0",
+  "description": "You Need an Automatic Budget",
+  "main": "index.js",
+  "author": "Ícaro Harry <me@icaro.io>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "deploy": "babel lib --out-dir functions/lib --copy-files && firebase deploy --only functions"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.0.0-rc.1",
+    "@babel/core": "^7.0.0-rc.1",
+    "firebase-functions": "^2.0.5",
+    "firebase-tools": "^4.1.1",
+    "puppeteer": "^1.7.0",
+    "ynab": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0"
+  }
+}
