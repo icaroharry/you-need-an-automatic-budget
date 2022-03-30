@@ -1,3 +1,4 @@
+const functions = require("firebase-functions");
 const ynab = require("ynab");
 require("dotenv").config();
 
@@ -40,7 +41,7 @@ const extractAmountFromNotificationString = (notificationString) => {
   return parseFloat(amount) * 1000 * isInflowOrOutflow(notificationString);
 };
 
-(async function () {
+async function addYnabExpense() {
   const expense = debitExpense;
   const amount = extractAmountFromNotificationString(expense);
   const accountId = getAccountIdFromNotificationString(expense);
@@ -59,4 +60,18 @@ const extractAmountFromNotificationString = (notificationString) => {
       `ERROR: id=${error.id}; name=${error.name}; detail: ${error.detail}`
     );
   }
-})();
+}
+
+// Take the text parameter passed to this HTTP endpoint and insert it into
+// Firestore under the path /messages/:documentId/original
+exports.addExpenseFromNotification = functions.https.onRequest(
+  async (req, res) => {
+    // Grab the text parameter.
+    const original = req.query.text;
+    console.log(original);
+    await addYnabExpense();
+    // Push the new message into Firestore using the Firebase Admin SDK.
+    // Send back a message that we've successfully written the message
+    res.json({ result: `Function run` });
+  }
+);
