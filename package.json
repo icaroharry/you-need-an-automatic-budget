@@ -1,0 +1,23 @@
+{
+  "name": "you-need-an-automatic-budget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icaroharry/you-need-an-automatic-budget.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icaroharry/you-need-an-automatic-budget/issues"
+  },
+  "homepage": "https://github.com/icaroharry/you-need-an-automatic-budget#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ynab": "^1.28.0"
+  }
+}
