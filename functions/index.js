@@ -1,6 +1,5 @@
 const functions = require("firebase-functions");
 const ynab = require("ynab");
-require("dotenv").config();
 
 const creditExpense = `Compra no crédito
 Olá, Icaro. Você acaba de comprar R$ 31,50 em VILLA VEG. A compra foi no crédito nacional, com o cartão final 1509.`;
@@ -33,25 +32,34 @@ const isInflowOrOutflow = (notificationString) => {
   }
 };
 
-const extractAmountFromNotificationString = (notificationString) => {
-  const stringSplit = notificationString.split(" R$ ");
-  const stringAmount = stringSplit[1].split(" ")[0];
-  const amount = stringAmount.replace(",", ".");
+const convertExpensePriceToFloat = (priceString) => {
+  const amount = priceString.replace(",", ".");
 
-  return parseFloat(amount) * 1000 * isInflowOrOutflow(notificationString);
+  return parseFloat(amount) * 1000;
 };
 
-async function addYnabExpense() {
-  const expense = debitExpense;
-  const amount = extractAmountFromNotificationString(expense);
+const extractDataFromNotificationString = (notificationString) => {
+  const regex =
+    /(?<name>[A-z]+),[a-zà-ú ]+(?<memo>[A-Z0-9 ]+) [a-zà-ú ]+R\$ (?<price>[0-9,]+)\.$/;
+  const { name, memo, price } = regex.exec(notificationString).groups;
+
+  const convertedPrice =
+    convertExpensePriceToFloat(price) * isInflowOrOutflow(notificationString);
+
+  return { name, amount: convertedPrice, memo };
+};
+
+async function addYnabExpense(expense) {
   const accountId = getAccountIdFromNotificationString(expense);
+  const { name, amount, memo } = extractDataFromNotificationString(expense);
+
   const transaction = {
     account_id: accountId,
-    payee_id: null,
     date: ynab.utils.getCurrentDateInISOFormat(),
     amount,
-    memo: "Teste",
+    memo,
   };
+
   try {
     await ynabAPI.transactions.createTransaction(BUDGET_ID, { transaction });
   } catch (err) {
@@ -67,11 +75,17 @@ async function addYnabExpense() {
 exports.addExpenseFromNotification = functions.https.onRequest(
   async (req, res) => {
     // Grab the text parameter.
-    const original = req.query.text;
-    console.log(original);
-    await addYnabExpense();
-    // Push the new message into Firestore using the Firebase Admin SDK.
-    // Send back a message that we've successfully written the message
-    res.json({ result: `Function run` });
+    if ((req.query.password = process.env.PASSWORD)) {
+      try {
+        await addYnabExpense(req.query.notification);
+        res.json({ ok: true });
+      } catch (error) {
+        res.json({ error });
+      }
+    } else {
+      // Push the new message into Firestore using the Firebase Admin SDK.
+      // Send back a message that we've successfully written the message
+      res.json({ error: `Access denied` });
+    }
   }
 );

@@ -1,0 +1,343 @@
+[debug] [2022-04-06T02:36:00.663Z] ----------------------------------------------------------------------
+[debug] [2022-04-06T02:36:00.666Z] Command:       /Users/icaroharry/.nvm/versions/node/v16.13.1/bin/node /Users/icaroharry/.nvm/versions/node/v16.13.1/bin/firebase emulators:start
+[debug] [2022-04-06T02:36:00.667Z] CLI Version:   10.5.0
+[debug] [2022-04-06T02:36:00.668Z] Platform:      darwin
+[debug] [2022-04-06T02:36:00.668Z] Node Version:  v16.13.1
+[debug] [2022-04-06T02:36:00.670Z] Time:          Tue Apr 05 2022 23:36:00 GMT-0300 (Brasilia Standard Time)
+[debug] [2022-04-06T02:36:00.671Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-06T02:36:00.957Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-06T02:36:00.958Z] > authorizing via signed-in user (icaropc17@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-04-06T02:36:01.038Z] [hub] writing locator at /var/folders/6h/q_vr3mx55mxbyh3f8l1vyf340000gn/T/hub-you-need-an-automatic-budget.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-04-06T02:36:01.094Z] defaultcredentials: writing to file /Users/icaroharry/.config/firebase/icaropc17_gmail_com_application_default_credentials.json
+[debug] [2022-04-06T02:36:01.096Z] Setting GAC to /Users/icaroharry/.config/firebase/icaropc17_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/icaroharry/.config/firebase/icaropc17_gmail_com_application_default_credentials.json"}}
+[debug] [2022-04-06T02:36:01.104Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/you-need-an-automatic-budget/adminSdkConfig [none]
+[debug] [2022-04-06T02:36:02.256Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/you-need-an-automatic-budget/adminSdkConfig 200
+[debug] [2022-04-06T02:36:02.256Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/you-need-an-automatic-budget/adminSdkConfig {"projectId":"you-need-an-automatic-budget","databaseURL":"https://you-need-an-automatic-budget.firebaseio.com","storageBucket":"you-need-an-automatic-budget.appspot.com","locationId":"us-central"}
+[warn] ⚠  ui: Emulator UI unable to start on port 4000, starting on 4003 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4003 instead."}}
+[debug] [2022-04-06T02:36:02.354Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-06T02:36:02.354Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-04-06T02:36:02.354Z] Starting Emulator UI with command {"binary":"node","args":["/Users/icaroharry/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/icaroharry/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-04-06T02:36:02.721Z] Web / API server started at localhost:4003
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4003\n"}}
+[info] i  functions: Watching "/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions\" for Cloud Functions..."}}
+[debug] [2022-04-06T02:36:02.899Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2022-04-06T02:36:07.324Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "ynab": "^1.28.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-06T02:36:07.325Z] Building nodejs source
+[debug] [2022-04-06T02:36:07.325Z] Analyzing nodejs backend spec
+[info] ✔  functions[us-central1-addExpenseFromNotification]: http function initialized (http://localhost:5001/you-need-an-automatic-budget/us-central1/addExpenseFromNotification). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/you-need-an-automatic-budget/us-central1/addExpenseFromNotification)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4003                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4003/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-04-06T02:36:26.209Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-06T02:36:26.225Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-06T02:36:26.226Z] Accepted request GET /you-need-an-automatic-budget/us-central1/addExpenseFromNotification?password=proibidoIntrusos --> us-central1-addExpenseFromNotification
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-04-06T02:36:26.288Z] [worker-pool] addWorker(us-central1-addExpenseFromNotification) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-addExpenseFromNotification)"}}
+[debug] [2022-04-06T02:36:26.289Z] [worker-pool] Adding worker with key us-central1-addExpenseFromNotification, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-addExpenseFromNotification, total=1"}}
+[debug] [2022-04-06T02:36:26.289Z] [worker-pool] submitWork(triggerId=us-central1-addExpenseFromNotification) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-addExpenseFromNotification)"}}
+[debug] [2022-04-06T02:36:26.290Z] [worker-us-central1-addExpenseFromNotification-fa88d524-c3e1-4292-b5e6-63ec53fc45ff]: Assigning socketPath: /var/folders/6h/q_vr3mx55mxbyh3f8l1vyf340000gn/T/fire_emu_8247.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addExpenseFromNotification-fa88d524-c3e1-4292-b5e6-63ec53fc45ff]: Assigning socketPath: /var/folders/6h/q_vr3mx55mxbyh3f8l1vyf340000gn/T/fire_emu_8247.sock"}}
+[debug] [2022-04-06T02:36:26.296Z] [worker-us-central1-addExpenseFromNotification-fa88d524-c3e1-4292-b5e6-63ec53fc45ff]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addExpenseFromNotification-fa88d524-c3e1-4292-b5e6-63ec53fc45ff]: BUSY"}}
+[debug] [2022-04-06T02:36:37.865Z] [runtime-status] [8247] Functions runtime initialized. {"cwd":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions","node_version":"16.13.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8247] Functions runtime initialized. {\"cwd\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions\",\"node_version\":\"16.13.1\"}"}}
+[debug] [2022-04-06T02:36:37.866Z] [runtime-status] [8247] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8247] Disabled runtime features: undefined"}}
+[debug] [2022-04-06T02:36:37.869Z] [runtime-status] [8247] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8247] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-04-06T02:36:37.870Z] [runtime-status] [8247] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.19.0","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8247] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-06T02:36:37.872Z] [runtime-status] [8247] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8247] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-06T02:36:37.872Z] [runtime-status] [8247] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.19.0","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8247] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-06T02:36:38.031Z] [runtime-status] [8247] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8247] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-06T02:36:38.031Z] [runtime-status] [8247] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.19.0","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8247] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-04-06T02:36:38.034Z] [runtime-status] [8247] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.19.0","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8247] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-06T02:36:38.035Z] [runtime-status] [8247] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8247] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-04-06T02:36:38.061Z] [runtime-status] [8247] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.19.0","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8247] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-06T02:36:38.074Z] [runtime-status] [8247] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8247] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-04-06T02:36:38.207Z] [runtime-status] [8247] Beginning invocation function addExpenseFromNotification! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8247] Beginning invocation function addExpenseFromNotification!"}}
+[info] i  functions: Beginning execution of "addExpenseFromNotification" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"Beginning execution of \"addExpenseFromNotification\""}}
+[debug] [2022-04-06T02:36:38.218Z] [runtime-status] [8247] Running addExpenseFromNotification in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8247] Running addExpenseFromNotification in signature http"}}
+[debug] [2022-04-06T02:36:38.226Z] [runtime-status] [8247] Attempting to listen to socketPath: /var/folders/6h/q_vr3mx55mxbyh3f8l1vyf340000gn/T/fire_emu_8247.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8247] Attempting to listen to socketPath: /var/folders/6h/q_vr3mx55mxbyh3f8l1vyf340000gn/T/fire_emu_8247.sock"}}
+[debug] [2022-04-06T02:36:38.233Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-06T02:36:38.235Z] [functions] Got req.url=/you-need-an-automatic-budget/us-central1/addExpenseFromNotification?password=proibidoIntrusos, mapping to path=/?password=proibidoIntrusos {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/you-need-an-automatic-budget/us-central1/addExpenseFromNotification?password=proibidoIntrusos, mapping to path=/?password=proibidoIntrusos"}}
+[debug] [2022-04-06T02:36:38.294Z] [runtime-status] [8247] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8247] Ephemeral server handling GET request"}}
+[warn] ⚠  External network resource requested!
+   - URL: "https://api.youneedabudget.com/v1/budgets/df5877ca-c2be-401d-91ba-a72d5c06ea46/transactions"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://api.youneedabudget.com/v1/budgets/df5877ca-c2be-401d-91ba-a72d5c06ea46/transactions\"\n - Be careful, this may be a production service."}}
+[debug] [2022-04-06T02:36:39.311Z] [runtime-status] [8247] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8247] Ephemeral server survived."}}
+[info] i  functions: Finished "addExpenseFromNotification" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"Finished \"addExpenseFromNotification\" in ~1s"}}
+[debug] [2022-04-06T02:36:39.314Z] [worker-us-central1-addExpenseFromNotification-fa88d524-c3e1-4292-b5e6-63ec53fc45ff]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addExpenseFromNotification-fa88d524-c3e1-4292-b5e6-63ec53fc45ff]: IDLE"}}
+[debug] [2022-04-06T02:36:39.317Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-06T02:37:14.195Z] File /Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/index.js changed, reloading triggers"}}
+[debug] [2022-04-06T02:37:14.283Z] File /Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/index.js changed, reloading triggers"}}
+[debug] [2022-04-06T02:37:15.457Z] [worker-pool] Shutting down IDLE worker (us-central1-addExpenseFromNotification) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-addExpenseFromNotification)"}}
+[debug] [2022-04-06T02:37:15.457Z] [worker-us-central1-addExpenseFromNotification-fa88d524-c3e1-4292-b5e6-63ec53fc45ff]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addExpenseFromNotification-fa88d524-c3e1-4292-b5e6-63ec53fc45ff]: FINISHING"}}
+[debug] [2022-04-06T02:37:15.562Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2022-04-06T02:37:42.205Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "ynab": "^1.28.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-06T02:37:42.205Z] Building nodejs source
+[debug] [2022-04-06T02:37:42.206Z] Analyzing nodejs backend spec
+[debug] [2022-04-06T02:37:42.235Z] [worker-us-central1-addExpenseFromNotification-fa88d524-c3e1-4292-b5e6-63ec53fc45ff]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addExpenseFromNotification-fa88d524-c3e1-4292-b5e6-63ec53fc45ff]: exited"}}
+[debug] [2022-04-06T02:37:42.236Z] [worker-us-central1-addExpenseFromNotification-fa88d524-c3e1-4292-b5e6-63ec53fc45ff]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addExpenseFromNotification-fa88d524-c3e1-4292-b5e6-63ec53fc45ff]: FINISHED"}}
+[debug] [2022-04-06T02:37:53.265Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-06T02:37:53.265Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-06T02:37:53.265Z] Accepted request GET /you-need-an-automatic-budget/us-central1/addExpenseFromNotification?password=proibidoIntrusos --> us-central1-addExpenseFromNotification
+[debug] [2022-04-06T02:37:53.266Z] [worker-pool] Cleaned up workers for us-central1-addExpenseFromNotification: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-addExpenseFromNotification: 1 --> 0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-04-06T02:37:53.276Z] [worker-pool] addWorker(us-central1-addExpenseFromNotification) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-addExpenseFromNotification)"}}
+[debug] [2022-04-06T02:37:53.277Z] [worker-pool] Adding worker with key us-central1-addExpenseFromNotification, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-addExpenseFromNotification, total=1"}}
+[debug] [2022-04-06T02:37:53.277Z] [worker-pool] submitWork(triggerId=us-central1-addExpenseFromNotification) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-addExpenseFromNotification)"}}
+[debug] [2022-04-06T02:37:53.277Z] [worker-us-central1-addExpenseFromNotification-46ab69bb-f453-47b1-b3f4-0605d1bb8197]: Assigning socketPath: /var/folders/6h/q_vr3mx55mxbyh3f8l1vyf340000gn/T/fire_emu_8292.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addExpenseFromNotification-46ab69bb-f453-47b1-b3f4-0605d1bb8197]: Assigning socketPath: /var/folders/6h/q_vr3mx55mxbyh3f8l1vyf340000gn/T/fire_emu_8292.sock"}}
+[debug] [2022-04-06T02:37:53.277Z] [worker-us-central1-addExpenseFromNotification-46ab69bb-f453-47b1-b3f4-0605d1bb8197]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addExpenseFromNotification-46ab69bb-f453-47b1-b3f4-0605d1bb8197]: BUSY"}}
+[debug] [2022-04-06T02:38:01.117Z] [runtime-status] [8292] Functions runtime initialized. {"cwd":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions","node_version":"16.13.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8292] Functions runtime initialized. {\"cwd\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions\",\"node_version\":\"16.13.1\"}"}}
+[debug] [2022-04-06T02:38:01.119Z] [runtime-status] [8292] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8292] Disabled runtime features: undefined"}}
+[debug] [2022-04-06T02:38:01.123Z] [runtime-status] [8292] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8292] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-04-06T02:38:01.125Z] [runtime-status] [8292] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.19.0","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8292] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-06T02:38:01.126Z] [runtime-status] [8292] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8292] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-06T02:38:01.126Z] [runtime-status] [8292] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.19.0","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8292] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-06T02:38:01.283Z] [runtime-status] [8292] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8292] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-06T02:38:01.289Z] [runtime-status] [8292] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.19.0","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8292] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-04-06T02:38:01.292Z] [runtime-status] [8292] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.19.0","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8292] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-06T02:38:01.303Z] [runtime-status] [8292] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8292] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-04-06T02:38:01.306Z] [runtime-status] [8292] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.19.0","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8292] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-06T02:38:01.320Z] [runtime-status] [8292] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8292] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-04-06T02:38:01.387Z] [runtime-status] [8292] Beginning invocation function addExpenseFromNotification! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8292] Beginning invocation function addExpenseFromNotification!"}}
+[info] i  functions: Beginning execution of "addExpenseFromNotification" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"Beginning execution of \"addExpenseFromNotification\""}}
+[debug] [2022-04-06T02:38:01.388Z] [runtime-status] [8292] Running addExpenseFromNotification in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8292] Running addExpenseFromNotification in signature http"}}
+[debug] [2022-04-06T02:38:01.395Z] [runtime-status] [8292] Attempting to listen to socketPath: /var/folders/6h/q_vr3mx55mxbyh3f8l1vyf340000gn/T/fire_emu_8292.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8292] Attempting to listen to socketPath: /var/folders/6h/q_vr3mx55mxbyh3f8l1vyf340000gn/T/fire_emu_8292.sock"}}
+[debug] [2022-04-06T02:38:01.404Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-06T02:38:01.406Z] [functions] Got req.url=/you-need-an-automatic-budget/us-central1/addExpenseFromNotification?password=proibidoIntrusos, mapping to path=/?password=proibidoIntrusos {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/you-need-an-automatic-budget/us-central1/addExpenseFromNotification?password=proibidoIntrusos, mapping to path=/?password=proibidoIntrusos"}}
+[debug] [2022-04-06T02:38:01.427Z] [runtime-status] [8292] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8292] Ephemeral server handling GET request"}}
+[warn] ⚠  External network resource requested!
+   - URL: "https://api.youneedabudget.com/v1/budgets/df5877ca-c2be-401d-91ba-a72d5c06ea46/transactions"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://api.youneedabudget.com/v1/budgets/df5877ca-c2be-401d-91ba-a72d5c06ea46/transactions\"\n - Be careful, this may be a production service."}}
+[debug] [2022-04-06T02:38:02.393Z] [runtime-status] [8292] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8292] Ephemeral server survived."}}
+[warn] ⚠  functions: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.setHeader (node:_http_outgoing:576:11)
+    at ServerResponse.header (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:771:10)
+    at ServerResponse.send (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:267:15)
+    at /Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/index.js:88:9
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async runFunction (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:564:9)
+    at async runHTTPS (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:590:5)
+    at async handler (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:510:17) {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at new NodeError (node:internal/errors:371:5)\n    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n    at ServerResponse.header (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:771:10)\n    at ServerResponse.send (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)\n    at ServerResponse.json (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:267:15)\n    at /Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/index.js:88:9\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async runFunction (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:564:9)\n    at async runHTTPS (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:590:5)\n    at async handler (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:510:17)"}}
+[debug] [2022-04-06T02:38:02.398Z] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.setHeader (node:_http_outgoing:576:11)
+    at ServerResponse.header (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:771:10)
+    at ServerResponse.send (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)
+    at EventEmitter.<anonymous> (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:883:33)
+    at EventEmitter.emit (node:events:402:35)
+    at EventEmitter.emit (node:domain:475:12)
+    at /Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:946:25
+    at Array.forEach (<anonymous>)
+    at FunctionsEmulator.onData (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:944:32)
+    at ChildProcess.<anonymous> (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:734:18)
+    at ChildProcess.emit (node:events:390:28)
+    at ChildProcess.emit (node:domain:475:12)
+    at emit (node:internal/child_process:917:12)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-04-06T02:38:02.420Z] [worker-us-central1-addExpenseFromNotification-46ab69bb-f453-47b1-b3f4-0605d1bb8197]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addExpenseFromNotification-46ab69bb-f453-47b1-b3f4-0605d1bb8197]: exited"}}
+[debug] [2022-04-06T02:38:02.420Z] [worker-us-central1-addExpenseFromNotification-46ab69bb-f453-47b1-b3f4-0605d1bb8197]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addExpenseFromNotification-46ab69bb-f453-47b1-b3f4-0605d1bb8197]: FINISHED"}}
+[debug] [2022-04-06T02:38:02.420Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-06T02:39:18.720Z] ----------------------------------------------------------------------
+[debug] [2022-04-06T02:39:18.723Z] Command:       /Users/icaroharry/.nvm/versions/node/v16.13.1/bin/node /Users/icaroharry/.nvm/versions/node/v16.13.1/bin/firebase emulators:start
+[debug] [2022-04-06T02:39:18.724Z] CLI Version:   10.5.0
+[debug] [2022-04-06T02:39:18.725Z] Platform:      darwin
+[debug] [2022-04-06T02:39:18.725Z] Node Version:  v16.13.1
+[debug] [2022-04-06T02:39:18.727Z] Time:          Tue Apr 05 2022 23:39:18 GMT-0300 (Brasilia Standard Time)
+[debug] [2022-04-06T02:39:18.727Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-06T02:39:18.899Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-06T02:39:18.900Z] > authorizing via signed-in user (icaropc17@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[warn] ⚠  emulators: It seems that you are running multiple instances of the emulator suite for project you-need-an-automatic-budget. This may result in unexpected behavior. 
+[debug] [2022-04-06T02:39:18.937Z] [hub] writing locator at /var/folders/6h/q_vr3mx55mxbyh3f8l1vyf340000gn/T/hub-you-need-an-automatic-budget.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-04-06T02:39:18.974Z] defaultcredentials: writing to file /Users/icaroharry/.config/firebase/icaropc17_gmail_com_application_default_credentials.json
+[debug] [2022-04-06T02:39:18.986Z] Setting GAC to /Users/icaroharry/.config/firebase/icaropc17_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/icaroharry/.config/firebase/icaropc17_gmail_com_application_default_credentials.json"}}
+[debug] [2022-04-06T02:39:18.990Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/you-need-an-automatic-budget/adminSdkConfig [none]
+[debug] [2022-04-06T02:39:20.166Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/you-need-an-automatic-budget/adminSdkConfig 200
+[debug] [2022-04-06T02:39:20.166Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/you-need-an-automatic-budget/adminSdkConfig {"projectId":"you-need-an-automatic-budget","databaseURL":"https://you-need-an-automatic-budget.firebaseio.com","storageBucket":"you-need-an-automatic-budget.appspot.com","locationId":"us-central"}
+[warn] ⚠  ui: Emulator UI unable to start on port 4000, starting on 4004 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4004 instead."}}
+[debug] [2022-04-06T02:39:20.236Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-06T02:39:20.236Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-04-06T02:39:20.236Z] Starting Emulator UI with command {"binary":"node","args":["/Users/icaroharry/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/icaroharry/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-04-06T02:39:20.501Z] Web / API server started at localhost:4004
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4004\n"}}
+[info] i  functions: Watching "/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions\" for Cloud Functions..."}}
+[debug] [2022-04-06T02:39:20.524Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2022-04-06T02:39:24.825Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "ynab": "^1.28.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-06T02:39:24.825Z] Building nodejs source
+[debug] [2022-04-06T02:39:24.826Z] Analyzing nodejs backend spec
+[info] ✔  functions[us-central1-addExpenseFromNotification]: http function initialized (http://localhost:5001/you-need-an-automatic-budget/us-central1/addExpenseFromNotification). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/you-need-an-automatic-budget/us-central1/addExpenseFromNotification)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4004                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4004/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-04-06T02:39:29.683Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-06T02:39:29.692Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-06T02:39:29.692Z] Accepted request GET /you-need-an-automatic-budget/us-central1/addExpenseFromNotification?password=proibidoIntrusos&notification=Ol%C3%A1%20Icaro,%20voc%C3%AA%20acaba%20de%20comprar%20no%20d%C3%A9bito%20no%20DROG%20ARAUJO%20182%20BELO%20HORIZONT%20BRA%20o%20valor%20de%20R$%203,09. --> us-central1-addExpenseFromNotification
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-04-06T02:39:30.048Z] [worker-pool] addWorker(us-central1-addExpenseFromNotification) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-addExpenseFromNotification)"}}
+[debug] [2022-04-06T02:39:30.284Z] [worker-pool] Adding worker with key us-central1-addExpenseFromNotification, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-addExpenseFromNotification, total=1"}}
+[debug] [2022-04-06T02:39:30.319Z] [worker-pool] submitWork(triggerId=us-central1-addExpenseFromNotification) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-addExpenseFromNotification)"}}
+[debug] [2022-04-06T02:39:30.320Z] [worker-us-central1-addExpenseFromNotification-34e55f23-7b2c-42fc-8224-7d7b1e447e0f]: Assigning socketPath: /var/folders/6h/q_vr3mx55mxbyh3f8l1vyf340000gn/T/fire_emu_8429.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addExpenseFromNotification-34e55f23-7b2c-42fc-8224-7d7b1e447e0f]: Assigning socketPath: /var/folders/6h/q_vr3mx55mxbyh3f8l1vyf340000gn/T/fire_emu_8429.sock"}}
+[debug] [2022-04-06T02:39:30.322Z] [worker-us-central1-addExpenseFromNotification-34e55f23-7b2c-42fc-8224-7d7b1e447e0f]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addExpenseFromNotification-34e55f23-7b2c-42fc-8224-7d7b1e447e0f]: BUSY"}}
+[debug] [2022-04-06T02:39:36.766Z] [runtime-status] [8429] Functions runtime initialized. {"cwd":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions","node_version":"16.13.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8429] Functions runtime initialized. {\"cwd\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions\",\"node_version\":\"16.13.1\"}"}}
+[debug] [2022-04-06T02:39:36.770Z] [runtime-status] [8429] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8429] Disabled runtime features: undefined"}}
+[debug] [2022-04-06T02:39:36.785Z] [runtime-status] [8429] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8429] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-04-06T02:39:36.788Z] [runtime-status] [8429] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.19.0","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8429] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-06T02:39:36.788Z] [runtime-status] [8429] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8429] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-06T02:39:36.789Z] [runtime-status] [8429] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.19.0","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8429] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-06T02:39:36.893Z] [runtime-status] [8429] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8429] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-06T02:39:36.894Z] [runtime-status] [8429] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.19.0","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8429] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-04-06T02:39:36.895Z] [runtime-status] [8429] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.19.0","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8429] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-06T02:39:36.898Z] [runtime-status] [8429] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8429] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-04-06T02:39:36.899Z] [runtime-status] [8429] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.19.0","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8429] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-04-06T02:39:36.899Z] [runtime-status] [8429] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8429] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-04-06T02:39:36.939Z] [runtime-status] [8429] Beginning invocation function addExpenseFromNotification! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8429] Beginning invocation function addExpenseFromNotification!"}}
+[info] i  functions: Beginning execution of "addExpenseFromNotification" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"Beginning execution of \"addExpenseFromNotification\""}}
+[debug] [2022-04-06T02:39:36.946Z] [runtime-status] [8429] Running addExpenseFromNotification in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8429] Running addExpenseFromNotification in signature http"}}
+[debug] [2022-04-06T02:39:36.952Z] [runtime-status] [8429] Attempting to listen to socketPath: /var/folders/6h/q_vr3mx55mxbyh3f8l1vyf340000gn/T/fire_emu_8429.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8429] Attempting to listen to socketPath: /var/folders/6h/q_vr3mx55mxbyh3f8l1vyf340000gn/T/fire_emu_8429.sock"}}
+[debug] [2022-04-06T02:39:36.956Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-06T02:39:36.957Z] [functions] Got req.url=/you-need-an-automatic-budget/us-central1/addExpenseFromNotification?password=proibidoIntrusos&notification=Ol%C3%A1%20Icaro,%20voc%C3%AA%20acaba%20de%20comprar%20no%20d%C3%A9bito%20no%20DROG%20ARAUJO%20182%20BELO%20HORIZONT%20BRA%20o%20valor%20de%20R$%203,09., mapping to path=/?password=proibidoIntrusos&notification=Ol%C3%A1%20Icaro,%20voc%C3%AA%20acaba%20de%20comprar%20no%20d%C3%A9bito%20no%20DROG%20ARAUJO%20182%20BELO%20HORIZONT%20BRA%20o%20valor%20de%20R$%203,09. {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/you-need-an-automatic-budget/us-central1/addExpenseFromNotification?password=proibidoIntrusos&notification=Ol%C3%A1%20Icaro,%20voc%C3%AA%20acaba%20de%20comprar%20no%20d%C3%A9bito%20no%20DROG%20ARAUJO%20182%20BELO%20HORIZONT%20BRA%20o%20valor%20de%20R$%203,09., mapping to path=/?password=proibidoIntrusos&notification=Ol%C3%A1%20Icaro,%20voc%C3%AA%20acaba%20de%20comprar%20no%20d%C3%A9bito%20no%20DROG%20ARAUJO%20182%20BELO%20HORIZONT%20BRA%20o%20valor%20de%20R$%203,09."}}
+[debug] [2022-04-06T02:39:36.997Z] [runtime-status] [8429] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8429] Ephemeral server handling GET request"}}
+[warn] ⚠  External network resource requested!
+   - URL: "https://api.youneedabudget.com/v1/budgets/df5877ca-c2be-401d-91ba-a72d5c06ea46/transactions"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://api.youneedabudget.com/v1/budgets/df5877ca-c2be-401d-91ba-a72d5c06ea46/transactions\"\n - Be careful, this may be a production service."}}
+[debug] [2022-04-06T02:39:37.710Z] [runtime-status] [8429] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"[runtime-status] [8429] Ephemeral server survived."}}
+[warn] ⚠  functions: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.setHeader (node:_http_outgoing:576:11)
+    at ServerResponse.header (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:771:10)
+    at ServerResponse.send (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:267:15)
+    at /Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/index.js:88:9
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async runFunction (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:564:9)
+    at async runHTTPS (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:590:5)
+    at async handler (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:510:17) {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-addExpenseFromNotification"},"extension":{},"message":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at new NodeError (node:internal/errors:371:5)\n    at ServerResponse.setHeader (node:_http_outgoing:576:11)\n    at ServerResponse.header (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:771:10)\n    at ServerResponse.send (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)\n    at ServerResponse.json (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:267:15)\n    at /Users/icaroharry/workfolder/you-need-an-automatic-budget/functions/index.js:88:9\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at async runFunction (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:564:9)\n    at async runHTTPS (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:590:5)\n    at async handler (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:510:17)"}}
+[debug] [2022-04-06T02:39:37.721Z] Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:371:5)
+    at ServerResponse.setHeader (node:_http_outgoing:576:11)
+    at ServerResponse.header (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:771:10)
+    at ServerResponse.send (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)
+    at EventEmitter.<anonymous> (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:883:33)
+    at EventEmitter.emit (node:events:402:35)
+    at EventEmitter.emit (node:domain:475:12)
+    at /Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:946:25
+    at Array.forEach (<anonymous>)
+    at FunctionsEmulator.onData (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:944:32)
+    at ChildProcess.<anonymous> (/Users/icaroharry/.nvm/versions/node/v16.13.1/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:734:18)
+    at ChildProcess.emit (node:events:390:28)
+    at ChildProcess.emit (node:domain:475:12)
+    at emit (node:internal/child_process:917:12)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-04-06T02:39:37.737Z] [worker-us-central1-addExpenseFromNotification-34e55f23-7b2c-42fc-8224-7d7b1e447e0f]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addExpenseFromNotification-34e55f23-7b2c-42fc-8224-7d7b1e447e0f]: exited"}}
+[debug] [2022-04-06T02:39:37.738Z] [worker-us-central1-addExpenseFromNotification-34e55f23-7b2c-42fc-8224-7d7b1e447e0f]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-addExpenseFromNotification-34e55f23-7b2c-42fc-8224-7d7b1e447e0f]: FINISHED"}}
+[debug] [2022-04-06T02:39:37.739Z] [work-queue] {"queueLength":0,"workRunningCount":0}
